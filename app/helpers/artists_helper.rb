@@ -1,7 +1,7 @@
 module ArtistsHelper
   def display_artist(song)
     if !song.nil? && !song.artist.nil?
-      aritst.name
+      song.aritst.name
       redirect_to artist_path(song.artist)
     else
       "Add Artist"
